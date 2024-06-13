@@ -953,12 +953,31 @@ body.dark-theme {
 .home__title_service{
   font-size: 250%;
   width: fit-content;
-  /* background-color: #FFF; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
 .about__description_service{
   text-align: justify;
   align-self: center;
@@ -1030,11 +1049,11 @@ body.dark-theme {
   .home__title_service{
     font-size: 400%;
     width: fit-content;
-    /* background-color: #FFF; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   .home__description {
     margin-bottom: var(--mb-2);
@@ -1164,11 +1183,11 @@ body.dark-theme {
   .home__title_service{
     font-size: 500%;
     width: fit-content;
-    /* background-color: #FFF; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
   .home__description {
     margin-bottom: var(--mb-2);
@@ -1269,11 +1288,11 @@ body.dark-theme {
   .home__title_service{
     font-size: 355%;
     width: fit-content;
-    /* background-color: #FFF; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
   .home__description {
@@ -1353,11 +1372,11 @@ body.dark-theme {
   .home__title_service{
     font-size: 530%;
     width: fit-content;
-    /* background-color: #FFF; */
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
 .home__description {

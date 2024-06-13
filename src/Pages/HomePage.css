@@ -569,7 +569,9 @@ img {
   justify-self: center;
   margin-bottom: var(--mb-0-5);
 }
-
+.services__category1{
+  background-color: #FDC212;
+}
 .card {
   width: 250px;
   height: 200px;
@@ -868,11 +870,14 @@ img {
   .home__container,
   .about__container,
   .security__container,
-  .services__container,
   .app__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .services__container{
+    grid-template-columns: repeat(1, 1fr);
+
   }
   .home__img {
     order: 1;
@@ -1030,7 +1035,7 @@ img {
     column-gap: 6rem;
   }
   .services__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .contact__container {
     grid-template-columns: 3fr 1.5fr 1.25fr;
@@ -1065,6 +1070,9 @@ img {
     display: inline-block;
     margin: 1vw 2vw;
     align-self: center;
+}
+.services__category1{
+  background-color: #FDC212;
 }
 }
 
@@ -1112,5 +1120,14 @@ img {
   display: inline-block;
   margin: 1vw 2vw;
   align-self: center;
+}
+.services__category1{
+  background-color: #FDC212;
+  width: 100%;
+}
+.services__category2{
+  /* background-color: #FDC212; */
+  width: 100%;
+  display:flex
 }
 }

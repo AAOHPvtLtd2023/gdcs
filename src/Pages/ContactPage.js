@@ -28,14 +28,20 @@ const ContactPage = () => {
       });
 
     navigate('/');
+
   };
   return (
     <>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
-      <main className="main">
 
+      {/*=============== BOXICONS ===============*/}
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      />
+
+      <main className="main">
         <div style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '50px' }}>
           <div className="gd" />
           <div className="form-container">
@@ -57,13 +63,16 @@ const ContactPage = () => {
                 <input required="" name="number" id="email" type="number" />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Subject</label>
                 <div id="subject">
-                  <select className="input" required="">
+                  <select className="input" required="" name="subject">
                     <option value="" disabled="" defaultValue='Default Subject'>
                       Select a subject
                     </option>
-                    {Object.values(Content).map((opt) => (<option value={opt.title}>{opt.title}</option>))}
+                    {Object.values(Content).map((opt) =>
+                    (
+                      opt.services.map((o) => (<option value={o.title}>{o.title}</option>))
+                    ))}
                   </select>
                 </div>
               </div>
@@ -74,9 +83,21 @@ const ContactPage = () => {
                   cols={50}
                   rows={10}
                   id="textarea"
-                  name="textarea"
+                  name="message"
                   defaultValue={""}
                 />
+              </div>
+              <div>
+                <label class="material-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  Click to agree to GDCS Pvt. Ltd. <a href="/terms & codition">Terms & Conditions</a>
+                </label>
+                <label class="material-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  Click to agree to GDCS Pvt. Ltd. <a href="/privacy-policy">Privacy Policy </a>
+                </label>
               </div>
               <button type="submit" className="form-submit-btn">
                 Submit

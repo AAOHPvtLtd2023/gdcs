@@ -3,10 +3,11 @@ import HomePage from './Pages/HomePage';
 import ServicesPage from './Pages/ServicesPage';
 import './App.css';
 import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
+import PrivacyPolicy from './Pages/privacypolicy';
+import Terms from './Pages/termscondition';
 
 function App() {
   const [darkMode, setDarkMode] = useState(null);
@@ -35,6 +36,19 @@ function App() {
     });
   };
 
+  const sendMessage = () => {
+    // Replace 'YOUR_PHONE_NUMBER' with your actual phone number including country code
+    const phoneNumber = '+917645083377';
+
+    // Replace 'MESSAGE' with any pre-defined message you want to send
+    const message = encodeURIComponent('Hello! I want to get in touch with you.');
+
+    // Construct the WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    // Redirect the user to WhatsApp
+    window.location.href = whatsappUrl;
+  };
 
   return (
 
@@ -43,20 +57,27 @@ function App() {
       <NavBar onSelect={(d) => { setDarkMode(d) }} />
 
       <Router>
+      <ScrollTop/>
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route exact path="/services" element={<ServicesPage darkMode={darkMode} />} />
+          <Route exact path="/services/:service" element={<ServicesPage darkMode={darkMode} />} />
           <Route exact path='/contact' element={<ContactPage />} />
+          <Route exact path='/privacy-policy' element={<PrivacyPolicy/>}/>
+          <Route exact path='/terms & codition' element={<Terms/>} />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>
       </Router>
       <Footer />
 
       {/*=============== SCROLL UP ===============*/}
-      <a href='/' className={`scrollup ${showScroll ? 'show-scroll' : ''}`} id="scroll-up" onClick={scrollToTop}>
+      <div className={`scrollup ${showScroll ? 'show-scroll' : ''}`} id="scroll-up" onClick={scrollToTop}>
         <i className="bx bx-up-arrow-alt scrollup__icon" />
-      </a>
+      </div>
 
+      <svg onClick={sendMessage} className='whatsapp' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48">
+        <path fill="#fff" d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z"></path><path fill="#fff" d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z"></path><path fill="#cfd8dc" d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z"></path><path fill="#40c351" d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z"></path><path fill="#fff" fill-rule="evenodd" d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z" clip-rule="evenodd"></path>
+      </svg>
     </body>
 
 
@@ -64,3 +85,13 @@ function App() {
 }
 
 export default App;
+
+const ScrollTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
