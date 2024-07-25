@@ -63,16 +63,16 @@ const Footer = () => {
                         </li>
                         <li className="footer_item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 9.75h4.875a2.625 2.625 0 0 1 0 5.25H12M8.25 9.75L10.5 7.5M8.25 9.75L10.5 12m9-7.243V21.75l-3.75-1.5l-3.75 1.5l-3.75-1.5l-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z" /></svg>
-                            <a href="/" className="footer__link">
+                            <a href="/refund-policy" className="footer__link">
                                 Refund Policy
                             </a>
                         </li>
-                        <li className="footer_item">
+                        {/* <li className="footer_item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6m8-3V4M8 8H3" /></svg>
                             <a href="/" className="footer__link">
                                 Delivery Policy
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <div className="footer__content">
@@ -92,22 +92,24 @@ const Footer = () => {
                         </li>
                         <li className="footer_item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="currentColor" d="m368 350.643l-112 63l-112-63v-66.562l-32-17.778v103.054l144 81l144-81V266.303l-32 17.778v66.562z" /><path fill="currentColor" d="M256 45.977L32 162.125v27.734L256 314.3l192-106.663V296h32V162.125Zm160 142.831l-32 17.777L256 277.7l-128-71.115l-32-17.777l-22.179-12.322L256 82.023l182.179 94.463Z" /></svg>
-                            <a href="http://tranings.gdcs.in" className="footer__link">
+                            <a target="blank" href="http://trainings.gdcs.in" className="footer__link">
                                 Trainings
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div className="footer__social">
-                    <a href="/" className="footer__social-link">
+                    <a target="blank" href="https://www.facebook.com/profile.php?id=61561490872629" className="footer__social-link">
                         <i className="bx bxl-facebook-circle" />
                     </a>
-                    <a href="/" className="footer__social-link">
-                        <i className="bx bxl-twitter" />
+                    <a target="blank" href="https://x.com/GdcsInfo" className="footer__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M17.751 3h3.067l-6.7 7.625L22 21h-6.172l-4.833-6.293L5.464 21h-3.07l7.167-8.155L2 3h6.328l4.37 5.752zm-1.076 16.172h1.7L7.404 4.732H5.58z"/></svg>
                     </a>
-                    <a href="/" className="footer__social-link">
+                    <a target="blank" href="https://www.instagram.com/gdcs20?igsh=YzljYTk1ODg3Zg==" className="footer__social-link">
                         <i className="bx bxl-instagram-alt" />
                     </a>
+                    <a target="blank" href="https://www.linkedin.com/company/103313966" className="footer__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 56 56"><path fill="currentColor" fill-rule="evenodd" d="M45.608 45.607h-7.415V34.002c0-2.766-.048-6.326-3.853-6.326c-3.86 0-4.449 3.015-4.449 6.129v11.802h-7.407V21.745h7.108v3.263h.103c.99-1.877 3.409-3.855 7.016-3.855c7.51 0 8.897 4.94 8.897 11.367zM14.123 18.485a4.299 4.299 0 0 1-4.303-4.301a4.3 4.3 0 0 1 8.6 0a4.3 4.3 0 0 1-4.297 4.301m-3.714 27.122h7.423V21.745H10.41zM49.3 3H6.688C4.653 3 3 4.614 3 6.606v42.787c0 1.992 1.653 3.608 3.688 3.608H49.3c2.04 0 3.699-1.616 3.699-3.608V6.606C53 4.614 51.34 3 49.301 3"/></svg>                    </a>
                 </div>
             </div>
             <p className="footer__copy">© GDCS. All right reserved</p>

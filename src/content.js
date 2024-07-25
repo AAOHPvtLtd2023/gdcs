@@ -53,6 +53,52 @@ export const Content = [
                 ilu2PathLight: 'Product packaging 2 bw.gif',
                 ilu2PathDark: 'Product packaging 2 bb.gif',
             },
+
+            // {
+            //     title:"Pay-Per-Click (PPC) Advertising",
+            //     subTitle: "Driving Instant Traffic and Conversions",
+            //     p1: "Maximize your online visibility and drive targeted traffic to your website with GDCS's Pay-Per-Click (PPC) Advertising service. Whether you're looking to boost brand awareness, generate leads, or increase sales, our team of PPC specialists is dedicated to creating and managing high-performance campaigns that deliver measurable results.",
+            //     p2: "Our PPC Advertising service offers a comprehensive approach to digital marketing, leveraging data-driven insights and advanced targeting techniques to reach your ideal audience at the right time with the right message. From keyword research and ad creation to campaign optimization and performance tracking, we provide end-to-end solutions that ensure your ads are effective, efficient, and aligned with your business goals.",
+            //     p3: "Our PPC Marketing service is designed to meet the diverse needs of businesses across various industries. Whether you're launching a new product, promoting a special offer, or seeking to enhance brand awareness, our team of experienced marketers collaborates closely with you to develop tailored PPC campaigns that align with your business goals. From keyword research and ad creation to bid management and performance analysis, we handle every aspect of your PPC campaigns to ensure optimal results.",
+            //     p4: "With GDCS, you're not just investing in ads – you're investing in a partnership dedicated to driving your business growth. We continually monitor and refine your campaigns, using data-driven insights to improve performance and achieve your desired outcomes. Let GDCS be your partner in PPC Marketing, and together, let's harness the power of targeted advertising to propel your business to new heights.",
+            //     p5:"Whether you're launching a new product, driving traffic to your website, or enhancing your online presence, GDCS is your trusted partner for professional PPC Advertising. Let us help you reach your target audience, achieve your marketing objectives, and grow your business through strategic and effective PPC campaigns.",
+            //     cardHeading: "Key features of our PPC Advertising service include:",
+            //     c1Front: "Customized Campaigns",
+            //     c1Back: "We work closely with you to understand your business objectives, target audience, and budget, creating tailored PPC campaigns that align with your goals and maximize your return on investment (ROI).",
+            //     c2Front: "Keyword Research",
+            //     c2Back: "Our team conducts thorough keyword research to identify the most relevant and high-performing keywords for your industry, ensuring that your ads reach the right audience and drive qualified traffic to your website.",
+            //     c3Front: "Ad Creation",
+            //     c3Back: "We design compelling ad copy and visuals that capture attention, convey your value proposition, and encourage clicks. Our ads are optimized for various platforms, including Google Ads, Bing Ads, and social media channels.",
+            //     c4Front: "Targeted Advertising",
+            //     c4Back: "Using advanced targeting options, we ensure your ads are shown to the right people based on factors such as location, demographics, interests, and search behavior, increasing the likelihood of conversions.",
+            //     ilu1PathLight: "ppc 1 light.gif",
+            //     ilu1PathDark: "ppc 1 dark.gif",
+            //     ilu2PathLight: "ppc 2 light.gif",
+            //     ilu2PathDark: "ppc 2 dark.gif"
+            // },
+
+            {
+                title:"Online Reputation Management(ORM)",
+                subTitle: "Building and Protecting Your Digital Image",
+                p1: "Protect and enhance your brand's online presence with GDCS's comprehensive Online Reputation Management (ORM) service. In today's digital age, maintaining a positive online reputation is crucial for building trust, attracting customers, and achieving long-term success. Our ORM experts are dedicated to monitoring, managing, and improving your online image, ensuring that your brand is perceived positively across all digital channels.",
+                p2: "Our ORM service offers a strategic approach to managing your online reputation, combining proactive monitoring, timely responses, and effective reputation-building techniques. Whether you're a small business, a large enterprise, or an individual professional, we provide tailored solutions to address your unique needs and challenges.",
+                p3: "In today's digital age, your online reputation can significantly impact your business's success. At GDCS, our Online Reputation Management (ORM) service is designed to help you build, manage, and protect your brand's digital image. Whether you're looking to enhance your online presence, recover from negative publicity, or maintain a positive reputation, our team of experts is dedicated to crafting strategies that align with your goals and resonate with your audience. By monitoring, analyzing, and addressing online feedback, we ensure that your brand's reputation remains strong and favorable.",
+                p4: "Our ORM service encompasses a comprehensive approach to managing your online reputation across various platforms, including social media, review sites, and search engines. We proactively engage with your audience, respond to reviews, and implement strategies to highlight positive content while mitigating the impact of negative feedback. By leveraging advanced tools and data-driven insights, we provide you with transparent reporting and actionable recommendations, allowing you to make informed decisions and maintain a positive digital presence. Let GDCS be your partner in Online Reputation Management, and together, let's safeguard your brand's reputation and drive long-term success.",
+                p5:"Whether you're looking to protect your brand, improve public perception, or recover from a reputation setback, GDCS is your trusted partner for professional Online Reputation Management. Let us help you build, maintain, and enhance a positive online presence that drives trust, loyalty, and business growth.",
+                cardHeading: "Key features of our Online Reputation Management service include:",
+                c1Front: "Reputation Monitoring",
+                c1Back: " We continuously monitor your online presence across social media platforms, review sites, forums, and other digital channels to identify any mentions, reviews, or comments about your brand. This allows us to stay informed about your online reputation in real time.",
+                c2Front: "Crisis Management:",
+                c2Back: " In the event of a reputation crisis, our team is equipped to handle it swiftly and effectively. We develop and implement crisis management strategies to mitigate damage, manage public perception, and restore your reputation.",
+                c3Front: "Content Creation",
+                c3Back: "We create and promote high-quality, positive content that reinforces your brand values and showcases your expertise. This includes blog posts, articles, press releases, and social media content that helps build a positive online narrative.",
+                c4Front: "Social Media Management",
+                c4Back: "Our team manages your social media profiles, ensuring that your brand engages with your audience effectively and positively. We develop and implement social media strategies that align with your brand identity and reputation goals.",
+                ilu1PathLight: "orm 1 light.gif",
+                ilu1PathDark: "orm 1 dark.gif",
+                ilu2PathLight: "orm 2 light.gif",
+                ilu2PathDark: "orm 2 dark.gif"
+            }
         ]
     },
 

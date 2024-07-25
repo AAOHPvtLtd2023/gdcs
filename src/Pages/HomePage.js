@@ -21,7 +21,7 @@ const HomePage = () => {
     });
 
     const mail = "info@gdcs.in";
-    const phoneNumber = "+917645083377";
+    const phoneNumber = "+080 6218 0291";
 
     Content.forEach(content => content.services.forEach(c => console.log(c.title)));
 
@@ -72,9 +72,9 @@ const HomePage = () => {
                 {/*=============== moving area ===============*/}
                 <section id="moving__area">
                     <div id="moving__text">
-                        <SVGContainer/>
-                        <SVGContainer/>
-                        <SVGContainer/>
+                        <SVGContainer />
+                        <SVGContainer />
+                        <SVGContainer />
                     </div>
                 </section>
                 {/*=============== SECURITY ===============*/}
@@ -159,7 +159,9 @@ const HomePage = () => {
                                     <span className="contact__information"><a href={`mailto:${mail}`} style={{ color: '#FDC212' }}> {mail}</a></span>
                                 </li>
                                 <li className="contact__address">
-                                    Location: <span className="contact__information">Bhubaneswar</span>
+                                    <a target='blank' href='https://www.google.com/maps?q=20.2131795,85.6998743'>
+                                        Location: <span className="contact__information">Plot No- 502/1237, Ogalapada, Industrial Estate, Janla, Bhubaneswar, Odisha 752054</span>
+                                    </a>
                                 </li>
                             </ul>
                             <div className="contact__content">

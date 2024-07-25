@@ -981,7 +981,7 @@ body.dark-theme {
 
   .about__description {
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
   }
 
 }
@@ -1036,7 +1036,7 @@ body.dark-theme {
 
   .about__description {
     font-size: 17px;
-    text-align: justify;
+    text-align: left;
   }
 
   .about__img,
@@ -1233,7 +1233,7 @@ body.dark-theme {
 
   .about__description {
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
   }
 }
 

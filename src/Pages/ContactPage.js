@@ -48,24 +48,24 @@ const ContactPage = () => {
             <form className="form" ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="email">Company Name</label>
-                <input required="" name="cname" id="email" type="text" />
+                <input name="cname" id="email" type="text" />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Personal Name</label>
-                <input required="" name="name" id="email" type="text" />
+                <input required name="name" id="email" type="text" />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input required="" name="email" id="email" type="text" />
+                <input required name="email" id="email" type="email"/>
               </div>
               <div className="form-group">
                 <label htmlFor="email">Contact No.</label>
-                <input required="" name="number" id="email" type="number" />
+                <input required name="number" id="email" type="tel" />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Subject</label>
                 <div id="subject">
-                  <select className="input" required="" name="subject">
+                  <select className="input" required name="subject">
                     <option value="" disabled="" defaultValue='Default Subject'>
                       Select a subject
                     </option>
@@ -79,7 +79,7 @@ const ContactPage = () => {
               <div className="form-group">
                 <label htmlFor="textarea">How Can We Help You?</label>
                 <textarea
-                  required=""
+                  // required=""
                   cols={50}
                   rows={10}
                   id="textarea"
@@ -89,14 +89,14 @@ const ContactPage = () => {
               </div>
               <div>
                 <label class="material-checkbox">
-                  <input type="checkbox" />
+                  <input required type="checkbox" />
                   <span class="checkmark"></span>
-                  Click to agree to GDCS Pvt. Ltd. <a href="/terms & codition">Terms & Conditions</a>
+                  Click to agree to GDCS <a href="/terms & codition">Terms & Conditions</a>
                 </label>
                 <label class="material-checkbox">
-                  <input type="checkbox" />
+                  <input required type="checkbox" />
                   <span class="checkmark"></span>
-                  Click to agree to GDCS Pvt. Ltd. <a href="/privacy-policy">Privacy Policy </a>
+                  Click to agree to GDCS <a href="/privacy-policy">Privacy Policy </a>
                 </label>
               </div>
               <button type="submit" className="form-submit-btn">

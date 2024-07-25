@@ -43,7 +43,7 @@ const ServicesPage = ({ darkMode }) => {
 
                     {/*=============== ABOUT ===============*/}
                     <section className="about_service section container1" id="about">
-                        <Fade direction="left">
+                        <Fade triggerOnce duration={2000} direction="left">
                             <div className="about__container_service1 ">
                                 <div className="about__data2">
                                     <p className="about__description_service">
@@ -60,7 +60,7 @@ const ServicesPage = ({ darkMode }) => {
                     </section>
 
                     <section className="about_service section container1" id="about" style={{ marginBottom: '-5%' }}>
-                        <Fade direction="right">
+                        <Fade triggerOnce duration={2000} direction="left">
                             <div className="about__container_service2 ">
                                 <div className="about__data2">
                                     <p className="about__description_service">
